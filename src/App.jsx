@@ -16,7 +16,7 @@ function App() {
   return (
     <BrowserRouter>
         {/* Particle Background */}
-        <div className="absolute inset-0 -z-10">
+        <div className="fixed top-0 left-0 w-full h-full -z-10">
           <Particles
             particleColors={['#ffffff', '#ffffff']}
             particleCount={200}
@@ -34,10 +34,10 @@ function App() {
           <Navbar />
           <Hero />
         </div>
-        {/* <About />
+        <About />
         <Experience />
         <Tech />
-        <Works /> */}
+        <Works />
         <div className="relative z-0">
           {/* <Contact /> */}
         </div>

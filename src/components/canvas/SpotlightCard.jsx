@@ -1,12 +1,19 @@
-import { useRef, useState } from 'react';
+import { useRef, useState } from "react";
+import {Tilt} from "react-tilt";
+import { motion } from "framer-motion";
+import { fadeIn, textVariant } from "../../utils/motion.js";
 
-const SpotlightCard = ({ children, className = '', spotlightColor = 'rgba(255, 255, 255, 0.25)' }) => {
+const SpotlightCard = ({
+  children,
+  className = "",
+  spotlightColor = "rgba(255, 255, 255, 0.25)",
+}) => {
   const divRef = useRef(null);
   const [isFocused, setIsFocused] = useState(false);
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [opacity, setOpacity] = useState(0);
 
-  const handleMouseMove = e => {
+  const handleMouseMove = (e) => {
     if (!divRef.current || isFocused) return;
 
     const rect = divRef.current.getBoundingClientRect();
@@ -45,7 +52,7 @@ const SpotlightCard = ({ children, className = '', spotlightColor = 'rgba(255, 2
         className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 ease-in-out"
         style={{
           opacity,
-          background: `radial-gradient(circle at ${position.x}px ${position.y}px, ${spotlightColor}, transparent 80%)`
+          background: `radial-gradient(circle at ${position.x}px ${position.y}px, ${spotlightColor}, transparent 80%)`,
         }}
       />
       {children}
@@ -53,4 +60,26 @@ const SpotlightCard = ({ children, className = '', spotlightColor = 'rgba(255, 2
   );
 };
 
-export default SpotlightCard;
+const ServiceCard = ({ index, title, icon }) => (
+  <Tilt
+    className="w-[250px]"
+    options={{ max: 45, scale: 1, speed: 450 }}
+  >
+    <motion.div
+      variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
+      className="green-pink-gradient p-[1px] rounded-[20px] shadow-card"
+    >
+      <SpotlightCard spotlightColor="rgba(0, 229, 255, 0.2)">
+        <div className="bg-neutral-900 rounded-[20px] py-5 px-6 min-h-[280px] flex flex-col justify-evenly items-center">
+          <img src={icon} alt={title} className="w-16 h-16 object-contain" />
+          <h3 className="text-white text-[20px] font-bold text-center">
+            {title}
+          </h3>
+        </div>
+      </SpotlightCard>
+    </motion.div>
+  </Tilt>
+);
+
+
+export default ServiceCard;
