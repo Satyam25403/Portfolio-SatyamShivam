@@ -4,7 +4,6 @@ import { styles } from "../styles";
 import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion.js";
 import ServiceCard from "./canvas/SpotlightCard";
-import { SectionWrapper } from "../hoc";
 
 const About = () => {
   return (
@@ -39,4 +38,5 @@ const About = () => {
 };
 
 //higher order component wrapping into a section wrapper: component, id 
-export default SectionWrapper(About, "about");
+// export default SectionWrapper(About, "about");
+export default About;
