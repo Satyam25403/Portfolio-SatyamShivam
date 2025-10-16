@@ -19,9 +19,17 @@ import aws from "./aws.png";
 import jenkins from "./jenkins.png";
 import terraform from "./terraform.png";
 import backend from "./backend.png";
+import school from "./school.png";
+import intermediate from "./intermediate.png";
+import cloud_intern from "./cloud_intern.png";
+import college from "./college.png";
 
 export { 
     logo,
+    school,
+    intermediate,
+    college,
+    cloud_intern,
     close,
     menu,
     web,

@@ -1,5 +1,9 @@
 import {
   logo,
+  school,
+  college,
+  cloud_intern,
+  intermediate,
   web,
   backend,
   devops,
@@ -111,29 +115,42 @@ const technologies = [
     name: "Terraform",
     icon: terraform,
   },
-  
+
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: aws,
+    title: "Matriculation (schooling)",
+    company_name: "Sri Vijnana Vihara English Medium school",
+    icon: school,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "2007 - April 2019",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Served as the School Pupils Leader, demonstrating leadership and responsibility.",
+      "Secured 94.72% in CBSE Class 10 board examinations.",
+      "Achieved 3rd place in a national-level Vedic Mathematics quiz at Gynana-Vijnana Mela.",
+      "Awarded Best Outgoing Student of the Year 2018–19 by the school.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: reactjs,
+    title: "Intermediate Education",
+    company_name: "Narayana Junior College",
+    icon: intermediate,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "2019 - 2022",
+    points: [
+      "Secured 98.7% in Intermediate State Board (Science Stream – PCM).",
+      "Achieved an EAMCET Rank of 1488 in the state-level engineering entrance exam(EAPCET).",
+      "Scored 96 percentile in JEE Mains with a Rank of 33,000",
+      "Demonstrated consistent academic excellence across competitive and board examinations.",
+    ],
+  },
+  {
+    title: "Undergraduate (B.Tech) Degree",
+    company_name: "VR Siddhartha Engineering College",
+    icon: college,
+    iconBg: "#E6DEDD",
+    date: "2022 - Present",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -142,24 +159,11 @@ const experiences = [
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: web,
+    title: "Cloud Computing Intern",
+    company_name: "Inversion Consultancy LLP",
+    icon: cloud_intern,
     iconBg: "#383E56",
     date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: docker,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
