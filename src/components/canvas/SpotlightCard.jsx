@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import {Tilt} from "react-tilt";
 import { motion } from "framer-motion";
-import { fadeIn, textVariant } from "../../utils/motion.js";
+import { fadeIn } from "../../utils/motion.js";
 
 const SpotlightCard = ({
   children,

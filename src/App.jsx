@@ -16,7 +16,7 @@ function App() {
   return (
     <BrowserRouter>
         {/* Particle Background */}
-        <div className="fixed top-0 left-0 w-full h-full -z-10">
+        <div className="fixed top-0 left-0 w-full h-screen -z-50 pointer-events-none bg-black">
           <Particles
             particleColors={['#ffffff', '#ffffff']}
             particleCount={200}
@@ -28,7 +28,7 @@ function App() {
             disableRotation={false}
           />
         </div>
-      <div className="relative z-0 bg-primary">
+      <div className="relative z-10 bg-transparent">
         {/* Main Content */}
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
           <Navbar />
@@ -38,8 +38,8 @@ function App() {
         <Experience />
         <Tech />
         <Works />
-        <div className="relative z-0">
-          {/* <Contact /> */}
+        <div className="relative ">
+          <Contact />
         </div>
       </div>
     </BrowserRouter>
