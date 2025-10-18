@@ -1,5 +1,6 @@
 import {
   logo,
+  project_sample,
   school,
   college,
   cloud_intern,
@@ -174,70 +175,58 @@ const experiences = [
 ];
 
 
-// const projects = [
-//   {
-//     name: "Full stack Food delivery App",
-//     description:
-//       "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-//     tags: [
-//       {
-//         name: "react",
-//         color: "blue-text-gradient",
-//       },
-//       {
-//         name: "mongodb",
-//         color: "green-text-gradient",
-//       },
-//       {
-//         name: "tailwind",
-//         color: "pink-text-gradient",
-//       },
-//     ],
-//     image: carrent,
-//     source_code_link: "https://github.com/",
-//   },
-//   {
-//     name: "AI powered interview assistant",
-//     description:
-//       "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-//     tags: [
-//       {
-//         name: "react",
-//         color: "blue-text-gradient",
-//       },
-//       {
-//         name: "restapi",
-//         color: "green-text-gradient",
-//       },
-//       {
-//         name: "scss",
-//         color: "pink-text-gradient",
-//       },
-//     ],
-//     image: jobit,
-//     source_code_link: "https://github.com/",
-//   },
-//   {
-//     name: "Bias detection dashboard for Non-Tech users",
-//     description:
-//       "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-//     tags: [
-//       {
-//         name: "nextjs",
-//         color: "blue-text-gradient",
-//       },
-//       {
-//         name: "supabase",
-//         color: "green-text-gradient",
-//       },
-//       {
-//         name: "css",
-//         color: "pink-text-gradient",
-//       },
-//     ],
-//     image: tripguide,
-//     source_code_link: "https://github.com/",
-//   },
-// ];
+const projects = [
+  {
+    name: "Full-Stack Food Delivery Application",
+    description:
+      "Engineered a production-ready full-stack food delivery system with three decoupled services — Customer Frontend, Admin Dashboard, and Backend API. Implemented JWT-based authentication, RESTful endpoints for orders, users, and payments, and simulated payment processing via Stripe API. Services were containerized using Docker for cross-platform deployment.",
+    tags: [
+      { name: "react", color: "blue-text-gradient" },
+      { name: "nodejs", color: "green-text-gradient" },
+      { name: "mongodb", color: "pink-text-gradient" },
+      { name: "docker", color: "yellow-text-gradient" },
+    ],
+    image: project_sample,
+    source_code_link: "https://github.com/Satyam25403/FoodApp",
+  },
+  {
+    name: "Cloud-Based Video Transcoding Pipeline",
+    description:
+      "Designed and implemented an automated video upload and transcoding pipeline using Node.js, Docker, and AWS EC2. Integrated AWS services (S3, SSM, SQS) for scalable orchestration and cost-optimized auto-scaling. Enabled seamless file ingestion, validation, and cloud storage using Express.js, Multer, and AWS SDKs.",
+    tags: [
+      { name: "nodejs", color: "blue-text-gradient" },
+      { name: "aws", color: "green-text-gradient" },
+      { name: "docker", color: "pink-text-gradient" },
+    ],
+    image: project_sample,
+    source_code_link: "https://github.com/Satyam25403/VideoStreamingProject",
+  },
+  {
+    name: "Bias Detection Dashboard for Non-Tech Users",
+    description:
+      "Developed an Explainable AI (XAI) web dashboard for dataset bias detection and visualization. Integrated LIME and SHAP for feature-level interpretability and automated PDF report generation with embedded plots and counterfactual explanations. Built using Flask and Matplotlib with React.js and TailwindCSS frontend.",
+    tags: [
+      { name: "python", color: "blue-text-gradient" },
+      { name: "flask", color: "green-text-gradient" },
+      { name: "react", color: "pink-text-gradient" },
+    ],
+    image: project_sample,
+    source_code_link: "https://github.com/Satyam25403/MINI",
+  },
+  {
+    name: "AI-Powered Interview Assistant",
+    description:
+      "A real-time, resume-aware interview platform built with React that simulates technical interviews using AI. Features candidate–interviewer tabs, dynamic question generation by difficulty level, automated scoring, persistent session management, and a searchable dashboard for interviewer analytics.",
+    tags: [
+      { name: "react", color: "blue-text-gradient" },
+      { name: "nodejs", color: "green-text-gradient" },
+      { name: "openrouter", color: "pink-text-gradient" },
+      { name: "ant-design", color: "yellow-text-gradient" },
+    ],
+    image: project_sample,
+    source_code_link: "https://github.com/sagarkundrapu/AI-Powered-Interview-Assistant",
+  },
+];
 
-export { services, technologies, navLinks, experiences };
+
+export { services, technologies, navLinks, experiences, projects };

@@ -23,8 +23,10 @@ import school from "./school.png";
 import intermediate from "./intermediate.png";
 import cloud_intern from "./cloud_intern.png";
 import college from "./college.png";
+import project_sample from "./project_sample.png";
 
 export { 
+    project_sample,
     logo,
     school,
     intermediate,
