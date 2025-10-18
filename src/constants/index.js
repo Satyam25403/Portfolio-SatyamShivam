@@ -179,7 +179,7 @@ const projects = [
   {
     name: "Full-Stack Food Delivery Application",
     description:
-      "Engineered a production-ready full-stack food delivery system with three decoupled services — Customer Frontend, Admin Dashboard, and Backend API. Implemented JWT-based authentication, RESTful endpoints for orders, users, and payments, and simulated payment processing via Stripe API. Services were containerized using Docker for cross-platform deployment.",
+      "Full-stack food delivery application with three decoupled services: Frontend, Admin Dashboard, and Backend. Implemented JWT-based authentication, RESTful endpoints and payment processing via Stripe. Containerized services using Docker for cross-platform deployment.",
     tags: [
       { name: "react", color: "blue-text-gradient" },
       { name: "nodejs", color: "green-text-gradient" },

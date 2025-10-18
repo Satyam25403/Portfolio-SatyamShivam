@@ -8,9 +8,9 @@ import ServiceCard from "./canvas/SpotlightCard";
 const About = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <motion.div variants={textVariant()} className="mt-20">
         <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <h2 className={styles.sectionHeadText}><span className='text-[#915eFF]'>Overview.</span></h2>
       </motion.div>
 
       <motion.p
