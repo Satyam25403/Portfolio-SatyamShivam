@@ -7,7 +7,7 @@ const Tech = () => {
   const { ref, inView } = useInView({ threshold: 0.5 });
 
   return (
-    <section ref={ref} className='w-full h-auto'>
+    <section ref={ref} className=' mt-10 w-full h-auto'>
       <div className='flex flex-row flex-wrap justify-center gap-10'>
         {technologies.map((technology) => (
           <div className='w-28 h-28' key={technology.name}>

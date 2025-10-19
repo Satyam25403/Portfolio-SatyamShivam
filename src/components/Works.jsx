@@ -86,11 +86,11 @@ const ProjectCard = ({
 
 const Works = () => (
   <>
-    <motion.div variants={textVariant()}>
+    <motion.div variants={textVariant()} className='mt-15 mx-50'>
       <p className={styles.sectionSubText}>My work</p>
-      <h2 className={styles.sectionHeadText}>Projects.</h2>
+      <h2 className={styles.sectionHeadText}><span className='text-[#915eFF]'>Projects.</span></h2>
     </motion.div>
-    <div className="w-full flex">
+    <div className="w-full flex mx-50">
       <motion.p
         className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
@@ -102,7 +102,7 @@ const Works = () => (
       </motion.p>
     </div>
     {/* This wrapper ensures all cards are equal height */}
-    <div className="mt-20 flex flex-wrap gap-7 items-stretch">
+    <div className="mt-20 mx-10 flex flex-wrap gap-7 items-stretch">
       {projects.map((project, index) => (
         <ProjectCard key={`project-${index}`} index={index} {...project} />
       ))}

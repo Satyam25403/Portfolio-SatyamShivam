@@ -14,6 +14,36 @@
   color-scheme: dark;
 }
 
+/* overriding react toast styling */
+.custom-toast {
+  background: white !important;
+  color: #915eFF !important;
+  box-shadow: 0 4px 32px 0 #915eFF24;
+}
+
+.custom-toast-body {
+  color: #915eFF !important;
+  font-weight: 500;
+}
+
+.custom-progress-bar {
+  background: #915eFF !important;
+}
+
+.custom-toast .Toastify__toast-icon {
+  color: #915eFF !important; /* changes icon color (including default React Toastify icon) */
+}
+
+.custom-toast .Toastify__toast-icon svg {
+  fill: #915eFF !important;
+  color: #915eFF !important;
+}
+.custom-toast .Toastify__toast-icon svg path {
+  fill: #915eFF !important;
+}
+
+
+
 .hash-span {
   margin-top: -100px;
   padding-bottom: 100px;

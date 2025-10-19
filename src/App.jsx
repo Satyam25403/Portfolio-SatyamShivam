@@ -28,7 +28,7 @@ function App() {
             disableRotation={false}
           />
         </div>
-      <div className="relative z-10 bg-transparent">
+      <div className="relative z-10 bg-transparent overflow-hidden">
         {/* Main Content */}
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
           <Navbar />
